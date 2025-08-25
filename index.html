@@ -1,16 +1,6 @@
 <!doctype html>
 <html>
 
-<style>
-  li {
-    margin-bottom: -15px; 
-  }
-  p {
-    margin-bottom: -25px; 
-  }
-</style>
-
-
 <head>
   <title>Lukas Renelt</title>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
@@ -48,16 +38,18 @@
       <div class="content-table flex-column">
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <img class="image" id="me" src="img/me.jpg">
+            <img class="image" id="me" src="img/profile.jpeg" alt="An image showing the author of the website Lukas Renelt">
           </div>
           <div class="flex-item flex-column">
             <h2>Lukas Renelt</h2>
             <p class="text">
               Postdoctoral researcher in Numerical Analysis for Partial Differential Equations (PDEs)<br>
-              lukas.renelt[<span>at</span>]inria.fr<br>
-              <!--<a href="https://cermics-lab.enpc.fr/" target="_blank"><b><FONT COLOR="#000000">Ecole Nationale des Ponts et Chaussées (ENPC-CERMICS)</FONT></b></a><br>-->
-              <a href="https://team.inria.fr/serena/" target="_blank"><b><FONT COLOR="#000000">French Institute for Research in Numerical Science and Technology (INRIA - SERENA)</FONT></b></a><br><br>
-              <!--Welcome to my academic webpage!-->
+              Member of the
+              <a href="https://team.inria.fr/serena/" style="text-decoration-line: underline" target="_blank"><b><FONT COLOR="#000000">SERENA project team</FONT></b></a>
+              at
+              <a href="https://www.inria.fr/en/inria-paris-centre" target="_blank"><b><FONT COLOR="#000000">INRIA Paris Centre</FONT></b></a>
+              <br><br>
+              Contact: <em>lukas.renelt[<span>at</span>]inria.fr</em><br>
             </p>
           </div>
         </div>
@@ -67,163 +59,147 @@
             <hr>
             <p class="text">
               <Div Align=justify> 
-                I am currently a Postdoc in the   
-                <a href="https://team.inria.fr/serena/" style="text-decoration: none; color: black;" target="_blank">
+                I am currently a postdoctoral researcher in the   
+                <a href="https://team.inria.fr/serena/" style="text-decoration-line: underline; color: black;" target="_blank">
                   SERENA team</a>
-                at INRIA Paris, working with Martin Vohralik.
-
-                <a href="http://cermics.enpc.fr/~ern/home.html" style="text-decoration: none; color: black;" target="_blank"><b>Alexandre Ern</b></a>, 
-                <a href="https://sites.google.com/view/zhaonandong/home" style="text-decoration: none; color: black;" target="_blank"><b>Zhaonan Dong</b></a>
-                at <a href="https://cermics-lab.enpc.fr/" style="text-decoration: none; color: black;" target="_blank">CERMICS, Ecole Nationale des Ponts et Chaussées, Institut Polytechnique de Paris </a> 
-      
-                As an applied mathematician, I am mainly interested in design, test and analyze <b>efficient numerical schemes</b> for PDEs.
-                My work mainly focus on <b>structure-preserving</b> schemes for nonlinear PDEs, including hyperbolic conservation laws, PDEs with stiff sourse, and nonlinear parabolic problems.<br><br>
-
-                As a guy with diplôme d'ingénieur (engineer degree in French), I am also interested in 1) the implementation with <b>C++</b>, <b>Python</b>, <b>Matlab</b> and <b>Julia</b>(currently using). 2) Physics-related <b>mathematical modeling</b>.<br><br>
-
-                I am currently speaking Chinese, English, French and Japanese (Duolingo level).
+                at INRIA Paris, working with
+                <a href="https://who.rocq.inria.fr/Martin.Vohralik/" style="text-decoration-line: underline; color: black;" target="_blank">
+                  Martin Vohralík</a>
+                .
+                <br>
+                Until May 2025, I was at the University of Münster (Germany)
+                under the supervision of
+                <a href="https://www.uni-muenster.de/AMM/en/ohlberger/team/mario_ohlberger.shtml" style="text-decoration-line: underline; color: black;" target="_blank">
+                  Mario Ohlberger</a>
+                and
+                <a href="https://www.uni-muenster.de/AMM/en/engwer/team/engwer.shtml" style="text-decoration-line: underline; color: black;" target="_blank">
+                  Christian Engwer</a>
               </Div>
             </p>
 
-          <h2 id="journal-paper">Research interests</h2>
+          <h2 id="interests">Research interests</h2>
           <hr>
-          <p class="text-small-margin">
-            
-
-          <div class="col-container">
-            <div class="col">
-              <li>
-                <b>Mathematical aspects:</b><br>
-              </li>
-              <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Hyperbolic Conservation Laws<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Semi-linear Parabolic problems<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; PDEs with stiff sourse term<br> 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Invariant Domain Preserving schemes<br> 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Asymptotic Preserving schemes<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; A posteriori error analysis for linear problems<br>
-              </p>
-            </div>
+          <p class="text-small-margin">          
+          <h3 id="aposteriori">A posteriori error estimation and adaptivity (Current research focus)</h3>
+          In the ANR/DFG project "RANPDE: Robust Adaptivity for Nonlinear Partial Differential Equations" (2025-2027) we currently investigate new approaches for designing adaptive methods for nonlinear PDEs.
+          The focus lies on the development of reliable and efficient a posteriori error estimators that can be used to steer adaptive mesh refinement strategies. In addition be want to prove optimality not only in terms of degrees of freedom but also in terms of computational time.
           
-            <div class="col">
-              <li>
-                <b>Application aspects:</b><br>
-              </li>
-              <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Fluid Mechanics<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Neutron Transport<br> 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Phase Field model<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Wave equation<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Adaptive algorithm<br><br>
-              </p>
-            </div>
-          </div>
+          <h3>Model Order Reduction for Friedrichs systems</h3>
+          During my PhD, I worked on the development and analysis of Model Order Reduction methods for parametrized Friedrichs' systems. These are a class of linear first-order PDEs that include, e.g., the advection-reaction equation, convection-diffusion problems, the linear elasticity equation or the Dirac-equation.
+          As one part of my work, we investigated a novel approach utilizing an adjoint approach for a general well-posed variational formulation that lends itself to the application of Model Order Reduction techniques with minimal regularity requirements.
+          We then proposed a two-stage reduction approach based on this adjoint formulation that does not require an explicit discretization of the infinite-dimensional trial space.
 
+          <h3 id="fiberTheory">Approximation theory in the context of parametrized PDEs</h3>
+          At the core of Model Order Reduction methods lies the approximation of the set consisting of all solutions of a parametrized PDE.
+          The quality of this approximation can be measured in terms of Kolmogorov N-widths which characterizes the best possible error decay that can be achieved with an N-dimensional linear approximation space.
+          <br>
+          With the application of parametrized Friedrichs systems in mind, we proposed a new interpretation that elevates these concepts to parameter-dependent function spaces where the established manifold-based intuition no longer applies. 
+          
+          <h3 id="localizedMor">Localized Model Order Reduction and "Localized Training" methods</h3>
+          In large-scale applications involving localized parametric variations in the coefficient data, localized model order reduction methods can significantly reduce the computational complexity.
+          In particular, we are interested in the design and analysis of localized training algorithms for constructing local approximation spaces.
+          These approaches can be combined with error estimation techniques leading to adaptive enrichment strategies.
+          <br>
+          During my PhD, I worked on the development and analysis of localized model order reduction methods for parametrized Friedrichs' systems.
+              
           <h2 id="journal-paper">Publications and preprints</h2>
           <hr>
-          <p class="text-small-margin">
-            [6] - [Preprint] A bound-preserving scheme for the Allen-Cahn equation<br>
-            -  2025 Z. Dong, A. Ern  and Z. Wang <!-- Computers and Mathematics with Applications, -->
-            - <a href="https://hal.science/hal-04931694"> <b>[link]</b></a> <br><br>
-
-            [5] - [Preprint] A priori and a posteriori error estimates of a DG-CG method for the wave equation in second order formulation<br>
-            -  2024 Z. Dong, L. Mascotto and Z. Wang <!-- Numerische Mathematik, -->
-            - <a href="https://inria.hal.science/hal-04768144"> <b>[link]</b></a> <br><br>
-
-            [4] - Mass conservative limiting and applications to the approximation of the steady-state radiation transport equations<br>
-            - Journal of Computational Physics, 2025 - J.-L. Guermond and Z. Wang
-            - <a href="https://hal.science/hal-04770516"> <b>[link]</b></a> <br><br>
-            
-
-            [3] - Asymptotic and invariant-domain preserving schemes for scalar conservation equations with stiff source terms and multiple equilibrium points<br> 
-            - Journal of Scientific Computing, 2024 - A. Ern, J.-L. Guermond and Z. Wang
-            - <a href="https://hal.science/hal-04357751v2"> <b>[link]</b></a> <br><br>
-
-            [2] - Hybrid high-order methods for elliptic PDEs on curved and complicated domains <br>
-            - 13th ICOSAHOM 2020/2021 Conference Proceeding, 2022 - Z. Dong and Z. Wang
-            - <a href="https://hal.science/hal-03476090"> <b>[link]</b></a><br><br>
-
-            [1] - The Proof of 2n Circle Arrangement Conjecture <br>
-            - Pure Mathematics, 2017 - Z. Wang
-            - <a href="https://pdf.hanspub.org/PM20170400000_16166335.pdf"> <b>[link]</b></a><br><br>
-
-
-          </p>
-
-          <h2 id="journal-paper">Talks</h2>
-          <hr>
-          <p class="text-small-margin">
-              <b>hp-version a priori error estimates of a DG-CG method for the linear wave equation</b> <br> 
-              30th Biennial Conference on Numerical Analysis - Glasgow (UK) - 2025 
-              - <a href="https://www.overleaf.com/read/stpvztzhwwrq#c40091"> <b>[slides]</b></a><br>
-
-              <b>Asymptotic-preserving and invariant-domain preserving schemes for scalar hyperbolic conservation laws with stiff source term</b> <br> 
-              International Conference on Applied Mathematics (ICAM) - Hongkong (China) - 2024 
-              - <a href="https://www.overleaf.com/read/vscftjpjrsjs#1db389"> <b>[slides]</b></a><br>
-              The 6th SIAM Texas-Louisiana Sectional Meeting (SIAM TX-LA) - Lafayette (USA) - 2023 
-              - <a href="https://www.overleaf.com/read/gvjcjfvzcvnw\#c52978"> <b>[slides]</b></a><br>
-              
-
-              <b>Monotonicity, sonic points and convergence of a stabilized FEM scheme for hyperbolic conservation laws</b> <br> 
-              Finite Element Rodeo - Houston (USA) - 2024 
-              - <a href="https://www.overleaf.com/read/wczsrmzpdynq#1fa880"> <b>[slides]</b></a><br>
-
-
-          </p>
-
-          
-          <!-- Experiences -->
-          <h2 id="journal-paper">Experiences</h2>
-            <hr>
-            <p class="text-small-margin"></p>
-              <li>
-                <b>Internships:</b><br>
-              </li>
-                <p>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Testing some advanced numerical methods for hyperbolic, parabolic and elliptic PDEs.- <a href="https://www.overleaf.com/read/fdhfmfybvxtp#2f33d7"> <b>[report]</b></a><br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SERENA team, INRIA, paris (France), October 2022 - April 2023.<br>
-
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Analysis of an invariant-domain-preserving scheme for conservation laws and hyperbolic systems.- <a href="https://www.overleaf.com/read/ykpkjsqcrpdz#3a81d7"> <b>[report]</b></a><br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SERENA team, INRIA, paris (France), May 2022 - September 2022.<br>
-
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Hybrid high-order method for elliptic PDEs on curved and complicated domains.- <a href="https://www.overleaf.com/read/gqvywgvfkdwv#fcee6e"> <b>[report]</b></a><br>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SERENA team, INRIA, paris (France), June 2021 - September 2021.<br><br>
-
-                </p><br>
-
-                <li>
-                  <b>Visiting scholar:</b><br>
-                </li>
-                  <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp; Design, analyse and test Invariant-domain-preserving schemes for hyperbolic problems.<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mathematical Departement, Texas A&M University, College Station (USA), September 2023 - May 2024.<br>
-                  </p>
-
-            </p>
-
-          <!-- Teaching -->
-          <h2 id="journal-paper">Teaching</h2>
-          <hr>
-          <p class="text-small-margin"></p>
+          <ul class="text-small-margin">
             <li>
-              <b>Spring semester 2025 - Université Paris-Dauphine-PSL:</b><br>
+              <em>'Sectional Kolmogorov N-widths for parameter-dependent function spaces: A general framework with application to parametrized Friedrichs systems'</em><br>
+              2025, (with Christian Engwer and Mario Ohlberger), submitted,
+              <a href="https://arxiv.org/abs/2507.00678"><b>[link]</b></a>
             </li>
-            <p>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2st year of Bachelor's degree in mathematics <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Course : Algebra 4 and numerical methods<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Teaching assistant: correct exercises<br><br><br>
-            </p>
-
             <li>
-              <b>Spring semester 2024 - Texas A&M University:</b><br>
+              <em>'Two-stage model reduction approaches for the efficient and certified solution of parametrized optimal control problems'</em><br>
+              2025, (with Hendrik Kleikamp), in 'Journal of Scientific Computing (JSC)',
+              <a href="https://dx.doi.org/10.1007/s10915-025-02988-w"><b>[link]</b></a>
             </li>
-            <p>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1st year of Bachelor's degree in engineering <br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Course : Explorations in Mathematics<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Instructor: give lectures, correct exercises, organize exams<br><br><br>
-            </p>
-            
-            
+            <li>
+              <em>'Construction of local reduced spaces for Friedrichs' systems via randomized training'</em><br>
+              2024, (with Christian Engwer and Mario Ohlberger), in 'Proceedings of the Conference Algoritmy',
+              <a href="http://www.iam.fmph.uniba.sk/amuc/ojs/index.php/algoritmy/article/view/2144"><b>[link]</b></a>
+            </li>
+            <li>
+              <em>'Model order reduction of an ultraweak and optimally stable variational formulation for parametrized reactive transport problems'</em><br>
+              2023, (with Christian Engwer and Mario Ohlberger), in 'SIAM Journal of Scientific Computing (SISC)',
+              <a href="https://dx.doi.org/10.1137/23M1613402"><b>[link]</b></a>
+            </li>
+            <li>
+              <em>'An optimally stable approximation of reactive transport using discrete test and infinite trial spaces'</em><br>
+              2023, (with Christian Engwer and Mario Ohlberger), in 'Finite Volumes for Complex Applications X - Volume 2, Hyperbolic and Related Problems',
+              <a href="https://dx.doi.org/10.1007/978-3-031-40860-1_30"><b>[link]</b></a>
+            </li>
+          </ul>
+
+          <h2 id="talks">Upcoming conferences</h2>
+          <hr>
+          I will be attending the following conferences - feel free to let me know in case you want to connect!
+          <ul class="text-small-margin">
+            <li>
+              <b>ENUMATH 2025</b> <br>
+              Heidelberg, Germany, 01.09. -- 05.09.2025
+            </li>
+            <li>
+              <b>Summer school "Optimality of adaptive finite element methods"</b> <br>
+              Bonn, Germany, 22.09. -- 26.09.2025
+            </li>
+            <li>
+              <b>MORTech 2025</b> <br>
+              Zaragoza, Spain, 26.11. -- 28.11.2025
+            </li>
+          </ul>
+
+
+          <h2 id="talks">Previous talks & conferences</h2>
+          <hr>
+          <ul class="text-small-margin">
+            <li>
+              <b>SIAM Conference on Computational Science and Engineering (CSE25)</b>, Invited Minisymposium talk on <em>'Local and global approximation strategies for (parametrized) Friedrichs' systems'</em> (Fort Worth, TX, United States, 03.03. -- 07.03.2025)
+            </li>
+            <li>
+              <b>Reduced-Order Modeling for Complex Engineering Problems</b>, Invited plenary talk on <em>'Model order reduction and localization of Friedrichs' systems'</em> (Chicago, IL, United States, 03.02. -- 07.02.2025)
+            </li>
+            <li>
+              <b>Model Order Reduction and Surrogate Modeling (MORe) 2024</b>, Contributed talk on <em>'Efficient linear Model Order Reduction for Friedrichs' systems'</em> (La Jolla, CA, United States, 09.09. -- 13.09.2024)
+            </li>
+            <li>
+              <b>pyMOR school and user meeting 2024</b>, Invited talk on <em>'Custom linear algebra backends: Using pyMOR with dune-istl'</em> (Münster, Germany, 26.08. -- 30.08.2024)
+            </li>
+            <li>
+              <b>Algoritmy 2024</b>, Invited Minisymposium talk on <em>'Model Order Reduction for Friedrichs' systems'</em> (Podbanske, Slovakia, 15.03. -- 20.03.2024)
+            </li>
+            <li>
+              <b>Young Mathematicians in Model Order Reduction (YMMOR) conference</b>, Contributed talk on <em>'Model Order Reduction for Friedrichs' systems'</em> (Stuttgart, Germany, 04.03. -- 08.03.2024)
+            </li>
+            <li>
+              <b>MORTech 2023</b>, Poster on <em>'Model Order Reduction for inf-sup-stable problems'</em> (Paris-Saclay, France, 22.11. -- 24.11.2023)
+            </li>
+            <li>
+              <b>FVCA 10</b>, Poster on <em>'An optimally stable numerical scheme for reactive transport'</em> (Strasbourg, France, 30.10. -- 03.11.2023)
+            </li>
+            <li>
+              <b>7th DUNE user meeting</b>, Workshop talk on <em>'Representation of parametric PDEs in DUNE-PDELab and application to model order reduction'</em> (Dresden, Germany, 18.09. -- 19.09.2023)
+            </li>
+            <li>
+              <b>ENUMATH 2023</b>, Minisymposium talk on <em>'Model Order Reduction for reaction-advection problems'</em> in MS 'Reducing the irreducible: model order reduction for transport-dominated problems' (Lisbon, Portugal, 04.09. -- 08.09.2023)
+            </li>
+            <li>
+              <b>GAMM 2023</b>, Minisymposium talk on <em>'An optimally stable discretization scheme for parametrized convection-dominated problems'</em> in MS 'Numerical methods for differential equations' (Dresden, Germany, 30.05. -- 02.06.2023)
+            </li>
+            <li>
+              <b>Young Mathematicians in Model Order Reduction (YMMOR) conference</b>, Contributed talk on <em>'Localized Model Order Reduction for convection-dominated problems using an optimally stable discretization'</em> (Ulm, Germany, 20.03. -- 24.03.2023)
+            </li>
+            <li>
+              <b>Model Order Reduction and Surrogate Modeling (MORe) 2022</b>, Participation (Berlin, Germany, 19.09. -- 23.09.2022)
+            </li>
+            <li>
+              <b>Young Mathematicians in Model Order Reduction (YMMOR) conference</b>, Introductory talk <em>'Introduction to the Reduced basis Method'</em> (Münster, Germany, 18.07. -- 22.07.2022)
+            </li>
+            <li>
+              <b>Young Mathematicians in Model Order Reduction (YMMOR) conference</b>, Contributed talk <em>'Localized MOR for advection-dominated convection-diffusion problems'</em> (Münster, Germany, 18.07. -- 22.07.2022)
+            </li>
+          </ul>
         </div>
       </div>
     </div>
