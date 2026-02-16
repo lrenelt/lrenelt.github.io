@@ -11,6 +11,18 @@
   max-width: 900px;
 }
 
+ul.text-small-margin li {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+ul.text-small-margin li:last-child {
+  border-bottom: none;
+}
+
 @media screen and (min-width: 1000px) {
   .flex-item-stretch-6 {
     flex: 5.5;
