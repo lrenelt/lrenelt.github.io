@@ -1369,23 +1369,24 @@ ol.nested>li:before {
   }
 
   .menu .menu-button:focus+.menu-items {
-    display: block;
+    display: flex;
   }
 
   .menu .menu-button:focus+.menu-items>a,
   .menu .menu-button:focus+.menu-items>div {
-    display: block;
+    display: flex;
   }
 
   .menu .menu-items {
-    display: none;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 10px;
     align-self: baseline;
   }
 
   .menu .menu-items:hover {
-    display: block;
+    display: flex;
   }
 
   .menu .menu-items>a:not(:last-child),
